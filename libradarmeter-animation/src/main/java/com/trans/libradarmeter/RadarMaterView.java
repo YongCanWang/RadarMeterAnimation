@@ -1,4 +1,4 @@
-package com.trans.radarmeteranimation;
+package com.trans.libradarmeter;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -11,14 +11,16 @@ import androidx.annotation.Nullable;
 
 /**
  * @author Tom灿
- * @description:
+ * @description: 镂空圆
  * @date :2023/5/24 13:44
  */
 public class RadarMaterView extends View {
     private Paint paint;
     private int verticalCenter;
     private int horizontalCenter;
+    // 圆半径
     private float circleRadius = 100;
+    // 圆颜色
     private int circleColor = Color.BLUE;
 
     public RadarMaterView(Context context) {
@@ -68,10 +70,18 @@ public class RadarMaterView extends View {
         canvas.drawCircle(horizontalCenter, verticalCenter, circleRadius, paint);
     }
 
+    /**
+     * 设置圆半径
+     * @param radius
+     */
     public void setCircleRadius(float radius) {
         circleRadius = radius;
     }
 
+    /**
+     * 设置圆颜色
+     * @param color
+     */
     public void setCircleColor(int color) {
         circleColor = color;
     }

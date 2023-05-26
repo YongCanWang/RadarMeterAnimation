@@ -1,8 +1,6 @@
-package com.trans.radarmeteranimation;
+package com.trans.libradarmeter;
 
 import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.util.AttributeSet;
